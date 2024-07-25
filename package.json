@@ -4,6 +4,7 @@
   "description": "CORS Anywhere is a reverse proxy which adds CORS headers to the proxied request. Request URL is taken from the path",
   "license": "MIT",
   "author": "Rob Wu <rob@robwu.nl>",
+
   "repository": {
     "type": "git",
     "url": "https://github.com/Rob--W/cors-anywhere.git"
@@ -42,11 +43,11 @@
     "supertest": "^2.0.1"
   },
   "scripts": {
-    "lint": "eslint .",
-    "test": "mocha ./test/test*.js --reporter spec",
-    "test-coverage": "istanbul cover ./node_modules/.bin/_mocha -- test/test.js test/test-ratelimit.js --reporter spec"
+    "start": "node server.js",
+    "test": "echo 'Error: no test specified' && exit 1"
+    
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "14.x"
   }
 }
