@@ -1,2 +1,6 @@
+*.swp
+*.tmp
+*.log
+
+coverage/
 node_modules/
-.env
